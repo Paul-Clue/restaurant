@@ -1,6 +1,8 @@
 
 const nav =() => {
-  const element2 = document.querySelector('#content');
+
+  const cont = document.createElement('div');
+  cont.setAttribute('class', 'cont');
 
   const navi = document.createElement('nav');
   navi.setAttribute('class', 'navbar navbar-expand-lg navbar-light bg-warning');
@@ -19,23 +21,26 @@ const nav =() => {
   const li = document.createElement('li');
   li.setAttribute('class', 'nav-item');
   const aa = document.createElement('a');
-  aa.setAttribute('class', 'nav-link active home');
+  aa.setAttribute('class', 'nav-link active');
+  aa.setAttribute('id', 'home');
   aa.setAttribute('href', '#');
   aa.innerText ='Home';
   li.appendChild(aa);
  
   const li2 = document.createElement('li');
-  li.setAttribute('class', 'nav-item');
+  li2.setAttribute('class', 'nav-item');
   const aa2 = document.createElement('a');
   aa2.setAttribute('class', 'nav-link contact');
+  aa2.setAttribute('id', 'contact');
   aa2.setAttribute('href', '#');
   aa2.innerText ='Contact Us';
   li2.appendChild(aa2);
 
   const li3 = document.createElement('li');
-  li.setAttribute('class', 'nav-item');
+  li3.setAttribute('class', 'nav-item');
   const aa3 = document.createElement('a');
   aa3.setAttribute('class', 'nav-link about');
+  aa3.setAttribute('id', 'about');
   aa3.setAttribute('href', '#');
   aa3.innerText ='About Us';
   li3.appendChild(aa3);
@@ -47,30 +52,12 @@ const nav =() => {
   div1.appendChild(div2);
   navi.appendChild(div1);
 
-  element2.appendChild(navi);
+  cont.appendChild(navi);
 
-  return element2;
+  return cont;
 };
 
 export default nav;
 
 
 
-{/* <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav> */}
