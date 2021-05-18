@@ -1,10 +1,14 @@
 //console.log("Is everything working?");
 import _ from 'lodash';
 import './style.css';
-import Img from './food.jpg';
+import nav from './navigation.js'
+import home from './home.js';
+import contact from './contact.js';
+import about from './about.js';
 
-// Add the image to our existing div.
-const myIcon = new Image();
-myIcon.src = Icon;
 
-element.appendChild(myIcon);
+const app = document.querySelector('body');
+app.appendChild(nav());
+app.appendChild(home());
+
+
