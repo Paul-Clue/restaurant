@@ -24,7 +24,7 @@ const change = () => {
 
   app.removeChild(app.childNodes[1]);
   app.appendChild(value2);
-}
+};
 
 const hme = document.querySelector('#home');
 hme.addEventListener('click', change);
