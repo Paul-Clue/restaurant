@@ -6,6 +6,11 @@
 > This is a static webpage built with Javascript. This page was built using webpack. All of the links were built using modules which were then imported to the index.js file. The index.js file serves as the entry point for webpack. Webpack uses this file to build out the site almost completely using Javascript.
 
 ![screenshot](./assets/img/Screenshot(16).png)
+
+## Live Demo
+
+[Live Demo Link](https://paul-clue.github.io/restaurant/#)
+
 ## Built With
 > Javascript.
 > HTML
